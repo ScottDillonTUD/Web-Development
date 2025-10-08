@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Wheels On Fire</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            background: white;
+            font-family: Verdana, Geneva, Tahoma;
+        }
+
+        .menu-item:first-child {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .menu-item:not(:first-child) {
+            font-size: 25px;
+            position: relative;
+            top: -2px;
+        }
+
+    
+        .car-of-week {
+            width: 80%;
+            height: 625px;
+            margin: 30px auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+
+        .car-of-week img {
+            width: 80%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            padding: 0 20px;
+        }
+
+        .box {
+            width: 30%;
+            height: 400px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma;
+        }
+
+        .box img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="menu"> 
+       <span class="menu-item">Wheels On Fire</span> 
+       <a href="index.html" class="menu-item">Home</a>
+       <a href="contact.html" class="menu-item">Contact</a>
+       <a href="about.html" class="menu-item">About</a>
+    </div>
+
+
+    <div class="car-of-week">
+        <h2>Car of the Week</h2>
+        <img src="F03868BB-F40F-4C66-AB62-0C5C6D664173.jpeg" alt="Car of the Week">
+        <p style="font-size: 20px; margin-top: 10px;">FATIMOBIL</p>
+    </div>
+
+    
+    <div class="gallery-title">My Collection</div>
+
+ 
+    <div class="gallery">
+        
+        <div class="box">
+            <img src="https://www.kindpng.com/picc/m/125-1250218_tesla-transparent-side-tesla-side-car-png-png.png" alt="Red Sports Car">
+            <p>Red Sports Car</p>
+        </div>  
+
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Tesla_Model_S_02_2013.jpg" alt="Blue Car">
+            <p>Blue Car</p>  
+        </div>
+
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Tesla_Model_3_parked%2C_front_driver_side%2C_3-24-19.jpg" alt="Black Car">
+            <p>Black Car</p>  
+        </div>
+
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Tesla_Model_X_Front.jpg" alt="White Car">
+            <p>White Car</p>  
+        </div>   
+
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Tesla_Model_Y_Front.jpg" alt="Silver Car">
+            <p>Silver Car</p>  
+        </div>   
+
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Tesla_Model_S_Plaid_front_view.jpg" alt="Green Car">
+            <p>Green Car</p>  
+        </div>   
+    </div>
+</body>
+</html>
