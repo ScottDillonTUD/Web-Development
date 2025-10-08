@@ -28,15 +28,25 @@
             font-family: Verdana, Geneva, Tahoma;
         }
 
-        .menu-item:first-child {
+        .menu-item-1 {
             font-size: 40px;
             font-weight: bold;
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma;
         }
 
-        .menu-item:not(:first-child) {
+        .menu-item-2 {
             font-size: 25px;
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
             position: relative;
             top: -2px;
+            text-decoration: none;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma;
         }
 
     
@@ -54,10 +64,10 @@
         }
 
         .car-of-week img {
-            width: 80%;
+            width: 100%;
             height: 500px;
-            object-fit: cover;
-            border-radius: 10px;
+            object-fit: contain;
+            border-radius: 20px;
         }
 
         .gallery-title {
@@ -72,42 +82,46 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 50px;
+            gap: 30px; /* space between boxes */
             margin-top: 30px;
             padding: 0 20px;
         }
 
         .box {
-            width: 30%;
-            height: 400px;
+            width: 30%; /* 3 per row */
+            height: 350px; /* taller boxes */
             border: 2px solid #ccc;
             border-radius: 10px;
-            overflow: hidden;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .box img {
-            width: 100%;
-            height: 300px;
-            object-fit: contain;
+            width: 90%;
+            height: 250px; /* adjust image height */
+            object-fit: cover; /* makes image fill box without distortion */
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
    
     <div class="menu"> 
-       <span class="menu-item">Wheels On Fire</span> 
-       <a href="index.html" class="menu-item">Home</a>
-       <a href="contact.html" class="menu-item">Contact</a>
-       <a href="about.html" class="menu-item">About</a>
-    </div>
+    <span class="menu-item-1">Wheels On Fire</span> 
+    <a href="index.html" class="menu-item-2">Home</a>
+    <a href="contact.html" class="menu-item-2">Contact</a>
+    <a href="about.html" class="menu-item-2">About</a>
+</div>
 
 
     <div class="car-of-week">
         <h2>Car of the Week</h2>
-        <img src="F03868BB-F40F-4C66-AB62-0C5C6D664173.jpeg" alt="Car of the Week">
-        <p style="font-size: 20px; margin-top: 10px;">FATIMOBIL</p>
+        <img src="2BEE21D7-7E30-4745-84BD-38A9A7DA1D85.jpeg" alt="Car of the Week">
+        <p style="font-size: 20px; margin-top: 10px;">Yellow Vintage</p>
     </div>
 
     
@@ -117,33 +131,33 @@
     <div class="gallery">
         
         <div class="box">
-            <img src="https://www.kindpng.com/picc/m/125-1250218_tesla-transparent-side-tesla-side-car-png-png.png" alt="Red Sports Car">
-            <p>Red Sports Car</p>
+            <img src="96579B25-0354-4428-9514-9B9CF874EC43.jpeg" alt="Red Sports Car">
+            <p>The Bumble Bee</p>
         </div>  
 
         <div class="box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Tesla_Model_S_02_2013.jpg" alt="Blue Car">
-            <p>Blue Car</p>  
+            <img src="30FA0DA6-18EE-43FA-82F1-6935F0D22E6A.jpeg" alt="Blue Car">
+            <p>The Beetle</p>  
         </div>
 
         <div class="box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Tesla_Model_3_parked%2C_front_driver_side%2C_3-24-19.jpg" alt="Black Car">
-            <p>Black Car</p>  
+            <img src="098319B1-0305-4E1C-9605-AC3CA7FF2A67.jpeg" alt="Black Car">
+            <p>White Drifter</p>  
         </div>
 
         <div class="box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Tesla_Model_X_Front.jpg" alt="White Car">
-            <p>White Car</p>  
+            <img src="43A0A853-F841-444A-9902-183BD92829A6.jpeg" alt="White Car">
+            <p>Navy Elegance</p>  
         </div>   
 
         <div class="box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Tesla_Model_Y_Front.jpg" alt="Silver Car">
-            <p>Silver Car</p>  
+            <img src="063BA252-44D1-45D1-9AC0-D2340A8F869E.jpeg" alt="Silver Car">
+            <p>Classic Porsche</p>  
         </div>   
 
         <div class="box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Tesla_Model_S_Plaid_front_view.jpg" alt="Green Car">
-            <p>Green Car</p>  
+            <img src="764FF799-E2B5-4BE6-B20D-0109E6A7426C.jpeg" alt="Green Car">
+            <p>The Dodge</p>  
         </div>   
     </div>
 </body>
