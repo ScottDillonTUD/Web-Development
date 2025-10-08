@@ -28,35 +28,26 @@
             font-family: Verdana, Geneva, Tahoma;
         }
 
-        .menu-item-1 {
+        .menu-item:first-child {
             font-size: 40px;
             font-weight: bold;
-            display: inline-block;
-            margin: 5px;
-            padding: 10px;
-            font-family: Verdana, Geneva, Tahoma;
         }
 
-        .menu-item-2 {
+        .menu-item:not(:first-child) {
             font-size: 25px;
-            display: inline-block;
-            margin: 5px;
-            padding: 10px;
             position: relative;
             top: -2px;
-            text-decoration: none;
-            color: black;
-            font-family: Verdana, Geneva, Tahoma;
         }
+
     </style>
 </head>
 <body>
    
     <div class="menu"> 
-    <span class="menu-item-1">Wheels On Fire</span> 
-    <a href="index.html" class="menu-item-2">Home</a>
-    <a href="contact.html" class="menu-item-2">Contact</a>
-    <a href="about.html" class="menu-item-2">About</a>
+    <span class="menu-item">Wheels On Fire</span> 
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="contact.html" class="menu-item">Contact</a>
+    <a href="about.html" class="menu-item">About</a>
 </div>
 
 <h1 style="margin-left:20px; font-size:35px; font-family:Verdana, Geneva, Tahoma, sans-serif;">Contact Us</h1>
