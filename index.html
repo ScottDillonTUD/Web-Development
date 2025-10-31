@@ -1,164 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8" />
-    <title>Wheels On Fire</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu {
-            position: sticky;
-            top: 0;
-            background: white;
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
-            z-index: 1000;
-        }
-
-        .menu-item {
-            display: inline-block;
-            margin: 5px;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-            background: white;
-            font-family: Verdana, Geneva, Tahoma;
-        }
-
-        .menu-item-1 {
-            font-size: 40px;
-            font-weight: bold;
-            display: inline-block;
-            margin: 5px;
-            padding: 10px;
-            font-family: Verdana, Geneva, Tahoma;
-        }
-
-        .menu-item-2 {
-            font-size: 25px;
-            display: inline-block;
-            margin: 5px;
-            padding: 10px;
-            position: relative;
-            top: -2px;
-            text-decoration: none;
-            color: black;
-            font-family: Verdana, Geneva, Tahoma;
-        }
-
-    
-        .car-of-week {
-            width: 80%;
-            height: 625px;
-            margin: 30px auto;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma;
-            background: #f9f9f9;
-            padding: 20px;
-        }
-
-        .car-of-week img {
-            width: 100%;
-            height: 500px;
-            object-fit: contain;
-            border-radius: 20px;
-        }
-
-        .gallery-title {
-            text-align: center;
-            font-family:Verdana, Geneva, Tahoma;
-            font-size: 40px;
-            font-weight: bold;
-            margin-top: 40px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px; /* space between boxes */
-            margin-top: 30px;
-            padding: 0 20px;
-        }
-
-        .box {
-            width: 30%; /* 3 per row */
-            height: 350px; /* taller boxes */
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .box img {
-            width: 90%;
-            height: 250px; /* adjust image height */
-            object-fit: cover; /* makes image fill box without distortion */
-            border-radius: 10px;
-        }
-    </style>
+<meta charset="utf-8" />
+<title>Wheels On Fire</title>
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
    
-    <div class="menu"> 
-    <span class="menu-item-1">Wheels On Fire</span> 
-    <a href="index.html" class="menu-item-2">Home</a>
-    <a href="contact.html" class="menu-item-2">Contact</a>
-    <a href="about.html" class="menu-item-2">About</a>
-</div>
-
-
-    <div class="car-of-week">
-        <h2>Car of the Week</h2>
-        <img src="2BEE21D7-7E30-4745-84BD-38A9A7DA1D85.jpeg" alt="Car of the Week">
-        <p style="font-size: 20px; margin-top: 10px;">Yellow Vintage</p>
+    <div class="menu">
+        
+        <span class="site-title">Wheels On Fire</span> 
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+        <a href="pages/about.html" class="nav-link">About</a>
     </div>
 
-    
-    <div class="gallery-title">My Collection</div>
+    <div class="car-of-week">
+        <h2 class="car-of-the-week-title">Car of the Week</h2>
+        <img src="media/2BEE21D7-7E30-4745-84BD-38A9A7DA1D85.jpeg" alt="Car of the Week">
+        <p class="car-caption">Yellow Vintage</p>
+    </div>
 
+    <div class="gallery-title">My Collection</div>
  
     <div class="gallery">
         
         <div class="box">
-            <img src="96579B25-0354-4428-9514-9B9CF874EC43.jpeg" alt="Red Sports Car">
+            <img src="media/96579B25-0354-4428-9514-9B9CF874EC43.jpeg" alt="Red Sports Car">
             <p>The Bumble Bee</p>
         </div>  
 
         <div class="box">
-            <img src="30FA0DA6-18EE-43FA-82F1-6935F0D22E6A.jpeg" alt="Blue Car">
+            <img src="media/30FA0DA6-18EE-43FA-82F1-6935F0D22E6A.jpeg" alt="Blue Car">
             <p>The Beetle</p>  
         </div>
 
         <div class="box">
-            <img src="098319B1-0305-4E1C-9605-AC3CA7FF2A67.jpeg" alt="Black Car">
+            <img src="media/098319B1-0305-4E1C-9605-AC3CA7FF2A67.jpeg" alt="Black Car">
             <p>White Drifter</p>  
         </div>
 
         <div class="box">
-            <img src="43A0A853-F841-444A-9902-183BD92829A6.jpeg" alt="White Car">
+            <img src="media/43A0A853-F841-444A-9902-183BD92829A6.jpeg" alt="White Car">
             <p>Navy Elegance</p>  
         </div>   
 
         <div class="box">
-            <img src="063BA252-44D1-45D1-9AC0-D2340A8F869E.jpeg" alt="Silver Car">
+            <img src="media/063BA252-44D1-45D1-9AC0-D2340A8F869E.jpeg" alt="Silver Car">
             <p>Classic Porsche</p>  
         </div>   
 
         <div class="box">
-            <img src="764FF799-E2B5-4BE6-B20D-0109E6A7426C.jpeg" alt="Green Car">
+            <img src="media/764FF799-E2B5-4BE6-B20D-0109E6A7426C.jpeg" alt="Green Car">
             <p>The Dodge</p>  
         </div>   
     </div>
+    
+    <div class="spacer"></div>
+    
+    <footer>
+        <p style="text-align: center; margin-top: 50px; color: #666; font-family: Verdana, Geneva, Tahoma, sans-serif;">© 2025 Wheels On Fire - All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
