@@ -200,3 +200,22 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             outline: 3px solid #333;
         }
+
+/* --- About Page Styles --- */
+
+        .about-header {
+            padding: 10px;
+            margin-left: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; /* Applied from span */
+            font-size: 35px; /* Applied from h1 and span */
+        }
+
+        .about-content {
+            padding: 20px;
+            margin-left: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 750px;
+            font-size: medium;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
