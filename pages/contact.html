@@ -3,50 +3,63 @@
 <head>
 <meta charset="utf-8" />
 <title>Wheels On Fire</title>
-<link rel="stylesheet" href="/css/styles.css">
+<script src="https://kit.fontawesome.com/a5907eba45.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="/Web-Development-main/css/styles.css" />
 </head>
+
 <body>
-  
-    <div class="menu"> 
+  <div class="menu">
         <span class="site-title">Wheels On Fire</span> 
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="pages/contact.html" class="nav-link">Contact</a>
-        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="/Web-Development-main/index.html" class="nav-link">Home</a>
+        <a href="/Web-Development-main/pages/contact.html" class="nav-link">Contact</a>
+        <a href="/Web-Development-main/pages/about.html" class="nav-link">About</a>
     </div>
+ 
+  <div class="contact-page">
+  <p class="contact-text">
+    If you have any questions, reach out at:
+  </p>
 
-    <h1 class="page-header">Contact Us</h1>
+  <div class="contact-links">
+    <a href="mailto:John.OReily@gmail.com" class="contact-link">
+      <span class="material-symbols-outlined">mail</span>
+      <span class="handle">John.OReily@gmail.com</span>
+    </a>
 
-    <p class="contact-text">
-      If you have any questions, reach out at 
-      <a href="mailto:John.O'Reilly@WheelsOnFire.com">John.O'Reilly@WheelsOnFire.com</a>.
-    </p>
+    <a href="https://x.com/WheelsOnFire" class="contact-link">
+      <i class="fa-brands fa-x-twitter"></i>
+      <span class="handle">@WheelsOnFire</span>
+    </a>
 
-    <p class="contact-text">
-      Otherwise, leave a message below:
-    </p>
+    <a href="https://instagram.com/WheelsOnFire" class="contact-link">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="handle">@WheelsOnFire</span>
+    </a>
+  </div>
 
-    <form class="contact-form" action="/submit" method="POST">
-        <fieldset class="form-fieldset">
-            <legend class="form-legend">Leave us a message</legend>
+  <form class="contact-form" action="/submit" method="POST">
+    <fieldset class="form-fieldset">
+      <legend class="form-legend">Leave us a message</legend>
 
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" class="form-input"><br>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" class="form-input"><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" class="form-input"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" class="form-input"><br>
 
-            <label for="comment">Comment:</label><br>
-            <textarea id="comment" name="comment" class="form-textarea"></textarea><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" class="form-textarea"></textarea><br>
 
-            <button type="submit" class="submit-button">Send</button>
-        </fieldset>
-    </form>
-    
-    <div class="spacer"></div>
-    
-    <footer>
-        <p class="footer-text">© 2025 Wheels On Fire - All Rights Reserved</p>
-    </footer>
+      <button type="submit" class="submit-button">Send</button>
+    </fieldset>
+  </form>
+</div>
 
+<div class="spacer"></div>
+
+  <footer>
+    <p class="footer-text">© 2025 Wheels On Fire - All Rights Reserved</p>
+  </footer>
 </body>
 </html>
