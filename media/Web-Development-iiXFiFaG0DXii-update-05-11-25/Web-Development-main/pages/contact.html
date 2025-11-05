@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Wheels On Fire</title>
+<link rel="stylesheet" href="/css/styles.css">
+<script src="https://kit.fontawesome.com/a5907eba45.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+</head>
+<body>
+  
+    <div class="menu"> 
+        <span class="site-title">Wheels On Fire</span> 
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+    </div>
+
+    <h1 class="page-header" style="text-align: center; border: 3px solid black; border-radius: 10px; 
+    margin-left: 350px; margin-right: 350px; padding: 5px;">Contact Us</h1>
+
+    <p class="contact-text">
+      If you have any questions, reach out at
+    <br>
+      <a href="mailto:John.OReily@gmail.com">
+    <span class="material-symbols-outlined">mail
+    </span>
+      </a>
+    <br>
+      <a href="x.com" class="icon-hyperlink">
+        <i class="fa-brands fa-x-twitter" style="width: 100px; height: 100px;"></i>
+      </a>
+    <br>
+      <a href="instagram.com" style="text-decoration: none;">
+      <i class="fa-brands fa-instagram" style="width: 100px; height: 100px;"></i>
+      </a>
+    </p>
+
+    <p class="contact-text">
+      Otherwise, leave a message below:
+    </p>
+
+    <form class="contact-form" action="/submit" method="POST">
+        <fieldset class="form-fieldset">
+            <legend class="form-legend">Leave us a message</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" class="form-input"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" class="form-input"><br>
+
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" class="form-textarea"></textarea><br>
+
+            <button type="submit" class="submit-button">Send</button>
+        </fieldset>
+    </form>
+    
+    <div class="spacer"></div>
+    
+    <footer>
+        <p class="footer-text">© 2025 Wheels On Fire - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
