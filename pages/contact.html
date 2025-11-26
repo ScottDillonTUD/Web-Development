@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="utf-8" />
-<title>Wheels On Fire</title>
-<script src="https://kit.fontawesome.com/a5907eba45.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-<link rel="stylesheet" href="/css/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels On Fire</title>
+    <script src="https://kit.fontawesome.com/a5907eba45.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
-  <div class="menu">
-        <span class="site-title">Wheels On Fire</span> 
-        <a href="/index.html" class="nav-link">Home</a>
-        <a href="/pages/contact.html" class="nav-link">Contact</a>
-        <a href="/pages/about.html" class="nav-link">About</a>
-    </div>
+    <nav class="menu">
+        <a href="/index.html" class="logo-container">
+            <span class="site-title">Wheels On Fire</span> 
+        </a>
+        <div class="nav-links">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/pages/contact.html" class="nav-link">Contact</a>
+            <a href="/pages/about.html" class="nav-link">About</a>
+            <a href="/pages/news.html" class="nav-link">News</a>
+        </div>
+    </nav>
  
-  <div class="contact-page">
-  <p class="contact-text">
-    If you have any questions, reach out at:
-  </p>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p class="contact-text">
+            If you have any questions, reach out at:
+        </p>
 
-  <div class="contact-links">
-    <a href="mailto:John.OReily@gmail.com" class="contact-link">
-      <span class="material-symbols-outlined">mail</span>
-      <span class="handle">John.OReily@gmail.com</span>
-    </a>
+        <div class="contact-links">
+            <a href="mailto:John.OReily@gmail.com" class="contact-link">
+                <span class="material-symbols-outlined">mail</span>
+                <span class="handle">John.OReily@gmail.com</span>
+            </a>
 
-    <a href="https://x.com/WheelsOnFire" class="contact-link">
-      <i class="fa-brands fa-x-twitter"></i>
-      <span class="handle">@WheelsOnFire</span>
-    </a>
+            <a href="https://x.com/WheelsOnFire" class="contact-link">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span class="handle">@WheelsOnFire</span>
+            </a>
 
-    <a href="https://instagram.com/WheelsOnFire" class="contact-link">
-      <i class="fa-brands fa-instagram"></i>
-      <span class="handle">@WheelsOnFire</span>
-    </a>
-  </div>
+            <a href="https://instagram.com/WheelsOnFire" class="contact-link">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="handle">@WheelsOnFire</span>
+            </a>
+        </div>
 
-  <form class="contact-form" action="/submit" method="POST">
-    <fieldset class="form-fieldset">
-      <legend class="form-legend">Leave us a message</legend>
+        <form class="contact-form" action="/submit" method="POST">
+            <fieldset style="border: none; padding: 0; margin: 0;">
+                <legend class="form-legend">Leave us a message</legend>
 
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" class="form-input"><br>
+                <div class="form-group">
+                    <label for="name" class="form-label">Name:</label>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" class="form-input"><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-      <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment" class="form-textarea"></textarea><br>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-      <button type="submit" class="submit-button">Send</button>
-    </fieldset>
-  </form>
-</div>
+                <div class="form-group">
+                    <label for="comment" class="form-label">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
 
-<div class="spacer"></div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </fieldset>
+        </form>
+    </div>
 
-  <footer>
-    <p class="footer-text">© 2025 Wheels On Fire - All Rights Reserved</p>
-  </footer>
+    <div class="spacer"></div>
+
+    <footer>
+        <p class="footer-text">© 2025 Wheels On Fire - All Rights Reserved</p>
+    </footer>
 </body>
 </html>
