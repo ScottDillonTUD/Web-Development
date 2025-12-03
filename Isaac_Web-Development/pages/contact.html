@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wheels On Fire</title>
+<script src="https://kit.fontawesome.com/a5907eba45.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <div class="menu">
+        <span class="site-title">Wheels On Fire</span> 
+  <a href="../index.html" class="nav-link">Home</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="news.html" class="nav-link">News</a>
+    </div>
+ 
+  <div class="contact-page">
+  <p class="contact-text">
+    If you have any questions, reach out at:
+  </p>
+
+  <div class="contact-links">
+    <a href="mailto:John.OReily@gmail.com" class="contact-link">
+      <span class="material-symbols-outlined">mail</span>
+      <span class="handle">John.OReily@gmail.com</span>
+    </a>
+
+    <a href="https://x.com/WheelsOnFire" class="contact-link">
+      <i class="fa-brands fa-x-twitter"></i>
+      <span class="handle">@WheelsOnFire</span>
+    </a>
+
+    <a href="https://instagram.com/WheelsOnFire" class="contact-link">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="handle">@WheelsOnFire</span>
+    </a>
+  </div>
+
+    <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Contact Client 2: John O’Reilly</legend>
+
+        <p class="contact-text">Please fill in the form below. Fields marked with * are required. We validate entries so you can be sure your contact details are correct.</p>
+
+        <!-- Accessible error summary (announced by screen readers) -->
+        <div id="formErrors" class="form-error-summary" role="alert" aria-live="assertive" hidden></div>
+
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" class="form-input" aria-required="true" aria-describedby="firstNameError">
+        <span id="firstNameError" class="error-message" role="alert" aria-live="polite" hidden></span>
+
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" class="form-input" aria-required="true" aria-describedby="lastNameError">
+        <span id="lastNameError" class="error-message" role="alert" aria-live="polite" hidden></span>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" class="form-input" aria-required="true" aria-describedby="emailError">
+        <span id="emailError" class="error-message" role="alert" aria-live="polite" hidden></span>
+
+        <label for="reason">Reason for Inquiry *</label>
+        <select id="reason" name="reason" class="form-input" aria-required="true" aria-describedby="reasonHelp reasonError">
+          <option value="" disabled selected>-- Select a reason --</option>
+          <option value="general">General</option>
+          <option value="feedback">Feedback</option>
+          <option value="technical">Technical support</option>
+        </select>
+        <div id="reasonHelp" class="form-help">Choose the most appropriate option so we can direct your message.</div>
+        <span id="reasonError" class="error-message" role="alert" aria-live="polite" hidden></span>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" class="form-textarea" aria-required="true" aria-describedby="messageError"></textarea>
+        <span id="messageError" class="error-message" role="alert" aria-live="polite" hidden></span>
+
+        <button type="submit" class="submit-button">Send message</button>
+      </fieldset>
+    </form>
+
+    <script src="../js/contact.js" defer></script>
+</div>
+
+<div class="spacer"></div>
+
+  <footer>
+    <p class="footer-text">© 2025 Wheels On Fire - All Rights Reserved</p>
+  </footer>
+</body>
+</html>
